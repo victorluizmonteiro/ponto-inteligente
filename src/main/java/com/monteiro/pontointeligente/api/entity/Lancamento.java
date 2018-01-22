@@ -30,7 +30,7 @@ public class Lancamento {
 	@Column(name = "descricao", nullable = true)
 	private String descricao;
 	
-	@Column(name = "localizacao", nullable = false)
+	@Column(name = "localizacao", nullable = true)
 	private String localizacao;
 	
 	@Column(name = "data_criacao", nullable = false)

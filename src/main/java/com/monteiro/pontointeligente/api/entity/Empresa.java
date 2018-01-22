@@ -11,6 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 @Entity
@@ -37,6 +38,7 @@ public class Empresa {
 		dataAtualizacao = new Date();
 	}
 	
+	@PrePersist
 	public void prePersist(){
 		final  Date atual = new Date();
 		dataCriacao = atual;
