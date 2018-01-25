@@ -19,7 +19,8 @@ import javax.persistence.TemporalType;
 
 import com.monteiro.pontointeligente.api.enums.TipoEnum;
 @Entity
-@Table(name="TB_LANCAMENTO")
+@Table(name="lancamento")
+
 public class Lancamento {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)

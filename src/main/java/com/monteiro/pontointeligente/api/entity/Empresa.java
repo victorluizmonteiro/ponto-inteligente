@@ -15,7 +15,7 @@ import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
 @Entity
-@Table(name="TB_EMPRESA")
+@Table(name="empresa")
 public class Empresa {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)

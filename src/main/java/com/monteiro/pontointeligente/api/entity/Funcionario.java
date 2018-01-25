@@ -24,7 +24,7 @@ import javax.persistence.Transient;
 
 import com.monteiro.pontointeligente.api.enums.PerfilEnum;
 @Entity
-@Table(name="TB_FUNCIONARIO")
+@Table(name="funcionario")
 public class Funcionario  implements Serializable{
 	/**
 	 * 
@@ -50,7 +50,7 @@ public class Funcionario  implements Serializable{
 	@Column(name="valor_hora",nullable=true)
 	private BigDecimal valorHora;
 	
-	@Column(name="qtd_horas_trabalhadas_dia",nullable=true)
+	@Column(name="qtd_horas_trabalho_dia",nullable=true)
 	private Float qtdHorasTrabalhoDia;
 	
 	@Column(name="qtd_horas_almoco",nullable=true)
