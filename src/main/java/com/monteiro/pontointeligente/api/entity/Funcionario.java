@@ -90,6 +90,11 @@ public class Funcionario  implements Serializable{
 	public Optional<Float>getQtdHorasTrabalhoDiaOpt(){
 		return Optional.ofNullable(qtdHorasTrabalhoDia);
 	}
+	
+	@Transient
+	public Optional<BigDecimal> getValorHoraOpt() {
+		return Optional.ofNullable(valorHora);
+	}
 
 	public Long getId() {
 		return id;
